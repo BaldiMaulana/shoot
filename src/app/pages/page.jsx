@@ -53,7 +53,7 @@ function Page({onNameChange}) {
 
     const date = new Date().toDateString()
     return(
-    <div className={`grid mt-2 border-2 p-2 rounded-xl ${Style.glass}`}>
+    <div className={`sm:grid mt-2 border-2 p-2 rounded-xl ${Style.glass}`}>
             <h1 className="text-center text-4xl">Write your name!</h1>
         <div className="flex justify-center gap-2">
         <input 
@@ -76,7 +76,7 @@ function Page({onNameChange}) {
             <h1>{nameToDisplay}</h1>
             {pick && (
                 <div>
-                    <h1 className="text-center text-2xl">Our anniversary date: {date} 💑</h1>
+                    <h1 className="text-center text-2xl">Our anniversary date: {date}</h1>
                 </div>
             )}
         {showOptions && (

@@ -12,7 +12,7 @@ function Page() {
 
 
     return (
-        <div className="grid justify-center items-center">
+        <div className="sm:grid justify-center items-center">
             <div>
                 <PageInput onNameChange={handleNameChange}  />
             </div>
