@@ -1,0 +1,5 @@
+.glass {
+  background: rgba(255, 255, 255, 0.25); /* Warna latar belakang dengan transparansi */
+  backdrop-filter: blur(10px); /* Efek blur */
+  -webkit-backdrop-filter: blur(10px); /* Efek blur untuk browser WebKit (Safari, Chrome) */
+}
