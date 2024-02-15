@@ -53,30 +53,30 @@ function Page({onNameChange}) {
 
     const date = new Date().toDateString()
     return(
-    <div className={`sm:grid mt-2 border-2 p-2 rounded-xl ${Style.glass}`}>
-            <h1 className="text-center text-4xl">Write your name!</h1>
-        <div className="flex justify-center gap-2">
+    <div className={`sm:grid mt-2  rounded-xl ${Style.glass}`}>
+            <h1 className="text-center ">Write your name!</h1>
+        <div className="sm:grid lg:flex justify-center gap-1">
         <input 
         type="text"
         placeholder="Fill in your name here :  " 
         value={name}
         onChange={handleChange}
         onKeyPress={handleKey}
-        className="pl-2 border-4 border-black rounded-xl text-black flex justify-center"
+        className="pl-2 border-4 w-full border-black rounded-xl text-black flex justify-center sm:text-xs lg:text-lg"
         />
         <button 
-        className="bg-black text-white p-2 rounded-xl"
+        className="bg-black text-white p-2 rounded-xl "
         onClick={handleSummit}
         >🚀</button>
         </div>
 
 
         
-        <div className="grid justify-center text-xl text-center">
+        <div className="grid justify-center text-center">
             <h1>{nameToDisplay}</h1>
             {pick && (
                 <div>
-                    <h1 className="text-center text-2xl">Our anniversary date: {date}</h1>
+                    <h1 className="text-center">Our anniversary date: {date}</h1>
                 </div>
             )}
         {showOptions && (
